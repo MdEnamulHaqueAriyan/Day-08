@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.one{
+    height: 50px;
+    background-color: tomato;
+}
+
+.one ul{
+    text-align: center;
+}
+.one ul li{
+    display: inline-block;
+    position: relative;
+}
+.one ul li a{
+    line-height: 50px;
+    padding: 0 30px;
+    color: aliceblue;
+    font-size: 24px;
+    display: block;
+}
+.one ul li a:hover{
+    background-color: brown;
+}
+.one ul li ul{
+    position: absolute;
+    background-color: rgba(110, 13, 201, 0.541);
+    width: 250px;
+    left: -50px;
+    display: none;
+}
+.one ul li ul li{
+    width: 100%;
+}
+.one ul li ul li a{
+    display: block;
+}
+.one ul li:hover > ul{
+    display: block;
+}
+.one ul li ul li ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: rgb(248, 5, 191);
+}
